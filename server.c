@@ -107,8 +107,6 @@ int main(int argc, char *argv[]){
 			perror("recvfrom");
 			exit(1);
 		}
-		// buf[numbytes] = '\0';
-		// printf("FILE WAS: %s\n", buf);
 
 		// After you get the first file, figure out how many things you're waiting for, then send the ack for the first one
 		pckt->total_frag = atoi(strtok_r(buf, ":", &saveptr));
