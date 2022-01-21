@@ -170,9 +170,6 @@ int main(int argc, char *argv[]) {
 	}
 	printf("total: %d, frag_no: %d, size: %d, filename: %s\n", pckt->total_frag, pckt->frag_no, pckt->size, pckt->filename);
 
-    // printf("left to read: %d\n", last_size);
-    // printf("%s\n", buff);
-
 	printf("Program took %.2f ms.\n", difftime(clock(), time1));
 
 	fclose(yo);
